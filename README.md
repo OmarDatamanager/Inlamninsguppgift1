@@ -271,3 +271,5 @@ Fler övningar online hittar du på:
 
 
 
+#   I n l a m n i n s g u p p g i f t 1  
+ 
