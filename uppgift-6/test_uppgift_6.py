@@ -1,3 +1,4 @@
+
 from uppgift_6 import multiplication_table
 
 def test_funktion():

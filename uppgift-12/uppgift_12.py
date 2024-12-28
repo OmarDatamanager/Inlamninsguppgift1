@@ -1,8 +1,11 @@
-# Uppgift 12
-# Skapa en funktion create_student_register(students) som tar emot en lista med namn och ålder och returnerar en dictionary där namnet är nyckeln och åldern är värdet.
 
-def funktions_namn(variabel_namn: datatyp) -> returtyp:
+def create_student_register(students: list) -> dict:
     """
-    Skriv beskrivning här.
+    Tar emot en lista med namn och ålder och returnerar en dictionary där namnet är nyckeln och åldern är värdet.
     """
-    pass # Ta bort denna rad och skriv din kod här
+    students_register = {name: age for name, age in students}
+    return students_register
+
+students = [("Alice", 24), ("Bob", 19), ("Charlie", 22)]
+print(create_student_register(students))  # Output: {'Alice': 24, 'Bob': 19, 'Charlie': 22}
+

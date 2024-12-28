@@ -1,8 +1,13 @@
-# Uppgift 9
-# Skapa en funktion is_palindrome(string) som kontrollerar om en given sträng är ett palindrom (dvs. samma framifrån och bakifrån).
 
-def funktions_namn(variabel_namn: datatyp) -> returtyp:
+def is_palindrome(string: str) -> bool:
     """
-    Skriv beskrivning här.
+    Kontrollerar om en given sträng är ett palindrom.
     """
-    pass # Ta bort denna rad och skriv din kod här
+    cleand_string = ''.join([char.lower() for char in string if char.isalnum()])
+    return cleand_string == cleand_string[::-1]
+
+print(is_palindrome("A man, a plan, a canal, Panama"))  # Output: True
+print(is_palindrome("Hello"))                           # Output: False
+print(is_palindrome("Madam"))                           # Output: True
+
+
